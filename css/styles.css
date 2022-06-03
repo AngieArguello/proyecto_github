@@ -46,12 +46,13 @@ font-family: bebas neue;
 padding-left: 10px;
 padding-right: 10px;
 padding-top: 15px;
-font-size: 45px;
+font-size:medium;
 
 
 }
 .inline a{
     color: white;
+    
     
 }
 .home-nosotros{
@@ -68,10 +69,10 @@ font-size: 45px;
 .home-nosotros-texto h2{
     font-family: poppins;
     font-weight: 600;
-    font-size: 5rem;
+    font-size: 2rem;
 }
 .home-nosotros-texto p{
-    font-size: 3rem;   
+    font-size: 1rem;   
     font-family: poppins;
     padding-bottom: 90px;
 }
@@ -99,14 +100,35 @@ font-size: 45px;
     font-family: Bebas Neue;
     text-align: center;
     color: bisque;
-    font-size: 6rem;
+    font-size: 3.5rem;
     padding: 30% 20%; 
 }
-.ofrecemos img{
+.tamañoH{
     border-radius: 10%;
     filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.23));
     transition: 0.5s;
-    width: 75%;
+    width: 50%;
+    height: 40%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%
+
+}
+.tamañoR{
+    border-radius: 10%;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.23));
+    transition: 0.5s;
+    width: 50%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%
+
+}
+.tamañoS{
+    border-radius: 10%;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.23));
+    transition: 0.5s;
+    width: 50%;
     text-align: center;
     margin-top: 5%;
     margin-bottom: 5%
@@ -142,9 +164,11 @@ footer{
     grid-template-columns: 1fr;
 
 }
+
 .footer-logo{
     justify-self: center;
     margin: 4rem 0rem 0rem 0rem;
+    width: 50%;;
 
 }
 
@@ -159,15 +183,16 @@ footer{
     text-align: left;
 }
 .instagram{
-    height: 100px;
+    height: 50px;
     width: 100px;
-    text-align: right;
+    text-align: left;
     padding-top: 20px;
     padding-left: 80px;
+    text-align: center;
 }
 .facebook{
-    height: 100px;
-    width: 100px;
+    height: 30px;
+    width: 30px;
     text-align: right;
 }
 
@@ -214,7 +239,7 @@ footer{
     grid-template-rows: repeat(3, auto );
 }
 
-.container {
+.containerr {
     display: grid;
     padding: 1rem;
     grid-gap: 1rem;
@@ -224,7 +249,7 @@ footer{
     background-color:#BABD8D ;
     }
     
-    .container img{
+    .containerr img{
     width: 100%;
     height: 100%;
 }  
@@ -256,10 +281,10 @@ footer{
     .textserv h2{
         font-family: poppins;
         font-weight: 600;
-        font-size: 5rem;
+        font-size: 2rem;
     }
     .textserv p{
-        font-size: 3rem;   
+        font-size: 1rem;   
         font-family: poppins;
         padding-bottom: 90px;
     }
@@ -268,8 +293,19 @@ footer{
         margin-left: 7%;
         border-radius: 10%;
         filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.23));
-    
     }
+    .Newfoot {
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        text-align: left;
+        justify-self: center;
+
+    }    
+        
+    
+    
     @media screen and (min-width:1024px){
         .portada{
             background-image: url(../images/tour.png);
@@ -429,8 +465,7 @@ footer{
             height: 150px;
             width: 150px;
             text-align: center;
-            padding-top: 20px;
-            padding-left: 80px;
+
         }
         .facebook{
             height: 150px;
@@ -570,7 +605,7 @@ footer{
             padding: 20px;
             width: 100%;
         }
-        .container{
+        .containerr{
             background-repeat: repeat;
             background-size: 100%;
             width: 50%;
@@ -596,7 +631,8 @@ footer{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            width: 90%;
+            width: 100%;
+            height: 80%;
             padding: 20px;
         }
         .textserv{
@@ -607,48 +643,20 @@ footer{
         .textserv h2{
             font-family: poppins;
             font-weight: 600;
-            font-size: 1.8rem;
+            font-size: 6rem;
         }
         .textserv p{
-            font-size: 1rem;   
+            font-size: 4rem;   
             font-family: poppins;
         }
         .Servimg img{
             margin-left: 0;
             vertical-align: middle;
             border-style: none;
-            width: 500px;
-            height: 400px;
+            width: 80%;
+            height: 80%;
         }
-        .Nuestros_servicios2{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 90%;
-            padding: 20px;
-        }
-        .textserv2{
-            width: 50%;
-            justify-items: center;
-            margin: 8% 8% 5% ;
-        }
-        .textserv2 h2{
-            font-family: poppins;
-            font-weight: 600;
-            font-size: 1.8rem;
-        }
-        .textserv2 p{
-            font-size: 1rem;   
-            font-family: poppins;
-        }
-        .Servimg2 img{
-            margin-left: 0;
-            vertical-align: middle;
-            border-style: none;
-            width: 500px;
-            height: 400px;
-        }
-        .container {
+        .containerr {
             display: grid;
             padding: 8rem 60rem;
             grid-gap: 3rem;
@@ -658,7 +666,7 @@ footer{
             background-color:#BABD8D ;
             }
             
-            .container img{
+            .containerr img{
             width: 100%;
             height: 100%;
         }  
