@@ -303,21 +303,26 @@ footer{
         justify-self: center;
 
     }    
+    .btn-black{
+        background-color: #000;
+        border: #000;
+    }
+
         
     
     
-    @media screen and (min-width:1024px){
+    @media screen and (min-width:1200px){
         .portada{
             background-image: url(../images/tour.png);
             width: 100%;
-            height:80rem ;
+            height:100rem;
         
         }
         .imagen{
             display: flex;
             justify-content: space-between;
             background-color: black !important;
-            height: 20%;
+            height: 25%;
         }
         .inline {
             display: flex;
@@ -328,9 +333,11 @@ footer{
         padding-top: 15px;
         
         
+        
         }
         .inline a{
             color: white;
+            font-size: 45px;
             
         }
         .backNegro{
@@ -341,8 +348,8 @@ footer{
             grid-template-columns: 1fr 1fr;
         }
         .img{
-            height: 200px;
-            width: 200px;
+            height: 350px;
+            width: 350px;
           
         }
         
@@ -448,12 +455,12 @@ footer{
             justify-self: flex-start;
         }
         
-        #footer-contact-us{
+        .Newfoot{
             margin: 2rem 1.5rem;
             width: 30rem;
             justify-self: end;
         }
-        #footer-contact-us p{
+        .Newfoot p{
             color: black;
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
@@ -476,26 +483,28 @@ footer{
           
             background-image: url(../images/flor.png);
             width: 100%;
-            height:80rem ;  
+            height:100rem ;  
         }
         
         .portadaUb{
           
             background-image: url(../images/montaña.png);
             width: 100%;
-            height:80rem ; 
+            height:100rem ; 
         }
         .portadaCont{
             background-image: url(../images/contacto.JPG);
             width: 100%;
-            height:80rem ;
+            height:100rem ;
         }
         .conFuen{  height: 100%; 
             font-family: Poppins;
         }
         .formulario{
-           display: flex;
-           justify-content: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
 
         }
         .contact_form{  
@@ -510,8 +519,8 @@ footer{
           }
           .contact_form input{
             background-color: #fbfbfb; 
-            width: 405px; 
-            height: 150px; 
+            width: 805px; 
+            height: 90px; 
             border-radius: 5px;  
             border-style: solid; 
             border-width: 1px; 
@@ -520,11 +529,13 @@ footer{
             padding-left: 10px;
             margin-bottom: 20px; 
             padding-top: 15px;
+            font-size: 35px;
+            
           }
           .textoCont{
             background-color: #fbfbfb; 
-            width: 405px; 
-            height: 150px; 
+            width: 805px; 
+            height: 300px; 
             border-radius: 5px;  
             border-style: solid; 
             border-width: 1px; 
@@ -533,11 +544,12 @@ footer{
             padding-left: 10px;
             margin-bottom: 20px; 
             padding-top: 15px;
+            font-size: 35px;
           }
           .Opciones{
             background-color: #fbfbfb; 
-            width: 405px; 
-            height: 150px; 
+            width: 805px; 
+            height: 90px; 
             border-radius: 5px;  
             border-style: solid; 
             border-width: #65687d; 
@@ -545,14 +557,16 @@ footer{
             padding-left: 10px;
             margin-bottom: 20px; 
             padding-top: 15px;
+            font-size: 35px;
           }
           .contact_form label{
                 display: block; 
                 float: center;  
+                font-size: 35px;
               
           }
           .contact_form button{
-            height: 45px; 
+            height: 85px; 
             padding-left: 5px;
             padding-right: 5px;   
             margin-bottom: 20px; 
@@ -568,6 +582,9 @@ footer{
           .contact_form button p{
                 color: white; 
           }
+          .btn{
+              font-size: 3rem;
+          }
           .formulario h1{
             font-size: 80px;  
             text-align: letf; 
@@ -579,7 +596,7 @@ footer{
             font-size: 30px; 
             padding-bottom: 30px;
             color: #0e0e0e; 
-            text-align:justify;
+            text-align:center;
             height: 40px;
             
           }
@@ -587,17 +604,17 @@ footer{
         .portadaHab{
             background-image: url(../images/habitacion_2.png);
             width: 100%;
-            height:80rem ;
+            height:100rem ;
         }
         .portadaServ{
             background-image: url(../images/servicios.png);
             width: 100%;
-            height:80rem ;
+            height:100rem ;
         }
         .portadaReser{
             background-image: url(../images/reservas.png);
             width: 100%;
-            height:80rem ;
+            height:100rem ;
         }
         .reserva{
             background-color: white;
@@ -670,13 +687,73 @@ footer{
             width: 100%;
             height: 100%;
         }  
-        .inline:hover{
+        .inline a:hover{
             background-image: linear-gradient(black,darkolivegreen);
-            font-size: 4rem;
-            transition: all 2s;
+            font-size: 60px;
+            transition: all 1s;
         }
-    
-        
+        .formreserv {
+            width: 80%;
+            height: 100%;
+            margin: 80px auto;
+            border-radius: 10px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            background-color: #fbfbfb;
+            padding-left: 30px;
+    }
+       .Galeriaboost{
+           width: 100%;
+           display: flex;
+           justify-content: center;
+          
+       }
+       .Galeriaboost-2{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+       
+    }
+    .formreserv-2{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    }
+    .form-label{
+        font-size: 45px;
+    }
+    .form-control {
+        display: block;
+        width: 100%;
+        height: 50%;
+        padding: 0.375rem 0.75rem;
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 0.25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;    
+        }
+        .form-select{
+            height: 3em;
+            font-size: 2.5rem;
+        }
+        .boton a:hover{
+            background-color: #65687d;
+            font-size: 60px;
+            transition: all 1s;
+            block-size: 250px ;
+        }
+       
+
+
         }
         
       
