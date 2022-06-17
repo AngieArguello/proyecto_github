@@ -1,6 +1,15 @@
-*{
+ @import'variables';
+ @import'mixins';
+ 
+ *{
     margin: 0;
     padding: 0;
+}
+ .Nuestros_servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
 }
 .contenedor{
     width: 100%;
@@ -265,13 +274,7 @@ footer{
         height: 100%;
     }  
     
-    .Nuestros_servicios{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 20px;
-    
-    }
+
     .textserv{
         width: 90%;
         text-align: center;
@@ -305,6 +308,19 @@ footer{
         background-color: #000;
         border: #000;
     }
+
+    @each $lay, $color in $back-color {
+        .#{$lay}-back{
+          @extend .Nuestros_servicios;
+            background-color: $color;
+            padding:22px
+        }
+        
+    }
+    .Texto-cambiado{
+        color: map-get($colores-home,text );
+    }
+
     @media screen and (min-width:1200px){
         .portada{
             background-image: url(../images/tour.png);
@@ -342,9 +358,7 @@ footer{
             grid-template-columns: 1fr 1fr;
         }
         .img{
-            height: 350px;
-            width: 350px;
-          
+         @include sizes(350px,350px)
         }
         
         .textoPortada{
@@ -381,8 +395,7 @@ footer{
             margin-left: 0;
             vertical-align: middle;
             border-style: none;
-            width: 80%;
-            height: 80%;
+            @include sizes(80%,80%)
          
         
         }
