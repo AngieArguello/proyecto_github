@@ -138,7 +138,7 @@ font-size:medium;
 
 }
 article{
-    margin: 0% 5%;
+    margin: 0% 2%;
 }
 .boton a{
     width: 9rem;
@@ -321,13 +321,13 @@ footer{
     .home-portada{
         background-image: url(../images/tour.png);
         width: 100%;
-        height: 100rem;
+        height: 35rem;
     }
     .imagen{
         display: flex;
         justify-content: space-between;
         background-color: black; 
-        height: 25%;
+        height: 15%;
     }
     .inline {
         display: flex;
@@ -338,7 +338,7 @@ footer{
     padding-top: 15px;
     a{
         color: white;
-        font-size: 45px; 
+        font-size: 18px; 
     }
     }
     .backNegro{
@@ -349,23 +349,23 @@ footer{
         grid-template-columns: 1fr 1fr;
     }
     .img{
-        @include sizes(350px,350px)
+        @include sizes(90px,90px)
        }
        .home-nosotros{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        height: 80%;
-        padding: 20px;
+        height: 40%;
+        padding: 5px;
     }
     .textoPortada{
         font-family: Bebas Neue;
         text-align:justify;
         color: bisque;
-        font-size: 8rem;
+        font-size: 3rem;
         position: absolute;
-        padding: 10% 25% ;
+        padding: 15% 25% ;
     }
     .home-nosotros-texto{
         width: 50%;
@@ -374,10 +374,10 @@ footer{
         h2{
             font-family: poppins;
             font-weight: 600;
-            font-size: 6rem;
+            font-size: 2rem;
         }
         p{
-            font-size: 4rem;   
+            font-size: 1rem;   
             font-family: poppins;
         }
     }
@@ -397,8 +397,8 @@ footer{
             filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.23));
             margin-bottom: 10%;
             transition: 0.5s;
-            height: 93%;
-            width: 94%; 
+            height: 246px;
+            width: 296px; 
             padding: 20px;
             border-radius: 10%;
             text-align: center;
@@ -415,8 +415,8 @@ footer{
         }
     }
     .boton a{
-        width: 15rem;
-        height: 5rem;
+        width: 7rem;
+        height: 2rem;
         color: white;
         font-family: 'Poppins', sans-serif;
         text-decoration: none;
@@ -430,7 +430,8 @@ footer{
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
-        font-size: 2rem;
+        font-size: 80%;
+        margin: 0% 0% 0% 33%;
      
     }
     .boton a:hover{
@@ -453,26 +454,30 @@ footer{
     }
     .footer-logo{
         margin-top: 2.5rem;
-        height: 500px;
-        width:500px ;
+        height: 150px;
+        width:150px ;
         justify-self: flex-start;
     }
     .Newfoot{
         margin: 2rem 1.5rem;
-        width: 30rem;
+        width: 13rem;
         justify-self: end;
         p{
             color: black;
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
-            font-size: 3rem;
+            font-size: 1rem;
             text-align: center;
             padding-top: 30px;
         }
     }
     .socialw{
-        height: 150px;
-        width: 150px;
+        height: 50px;
+        width: 50px;
+        
+    
+        
+
     } 
     /*portada galería*/
     .portadaGal{
